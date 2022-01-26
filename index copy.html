@@ -1,0 +1,51 @@
+<!-- Birthday Countdown 
+how i'd like to modify this:
+1) let user input the date 
+2) ask user through buttons what kind of celebration it is; 
+    i) birthday
+    ii) anniversary
+    iii) funeral (??) 
+    iv) random 
+3) change css depending on what occasion it is 
+
+Current troubles: 
+why the hell can't the user input the values 
+
+
+-->
+
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Birthday Countdown</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+
+        <h1 id="time-left"></h1>
+
+        <h2 id = "question"> Enter a date </h2>
+
+        <input id = "month" placeholder="month">
+        <input id = "day" placeholder="day">
+        <input id = "year" placeholder="year">
+        <br>
+        <br> 
+        <button onclick = "countDown()"id = "btn"> Submit </button>
+
+        <h2> What's the occasion? </h2>
+
+        <button onclick = "document.body.style.backgroundColor = 'pink'""> Birthday </button>
+       
+
+        <button id = "annie"> Anniversary </button>
+
+        <button id = "newYears"> New Years </button>
+          
+     
+
+        <script src="app.js"></script> 
+    </body>
+</html>
